@@ -1,6 +1,5 @@
 {
   "name": "eslint-plugin-typefile",
-  "private": "false",
   "homepage": "https://github.com/Ruslan43G/eslint-plugin-typefile",
   "repository": {
     "type": "git",
@@ -19,7 +18,7 @@
   },
   "scripts": {
     "build": "vite build && tsc --emitDeclarationOnly",
-    "prepublishOnly": "npm run build && npm publish --dry-run"
+    "prepublishOnly": "npm run build"
   },
   "files": [
     "dist"
