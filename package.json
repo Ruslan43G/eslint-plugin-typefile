@@ -19,8 +19,7 @@
   },
   "scripts": {
     "build": "vite build && tsc --emitDeclarationOnly",
-    "prepublishOnly": "npm run build",
-    "publish:dist": "npm publish dist"
+    "prepublishOnly": "npm run build && npm publish --dry-run"
   },
   "files": [
     "dist"
