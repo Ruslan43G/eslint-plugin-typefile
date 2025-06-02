@@ -1,5 +1,11 @@
 {
   "name": "eslint-plugin-typefile",
+  "private": "false",
+  "homepage": "https://github.com/Ruslan43G/eslint-plugin-typefile",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruslan43G/eslint-plugin-typefile.git"
+  },
   "version": "1.0.0",
   "description": "Custom eslint rules",
   "main": "dist/index.cjs",
@@ -12,7 +18,9 @@
     }
   },
   "scripts": {
-    "build": "vite build && tsc --emitDeclarationOnly"
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "prepublishOnly": "npm run build",
+    "publish:dist": "npm publish dist"
   },
   "files": [
     "dist"
