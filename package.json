@@ -1,0 +1,32 @@
+{
+  "name": "eslint-plugin-typefile",
+  "version": "1.0.0",
+  "description": "Custom eslint rules",
+  "main": "dist/index.cjs",
+  "module": "dist/index.es.js",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "vite build && tsc --emitDeclarationOnly"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "author": "Ruslan Tikhomirov",
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^9.6.0",
+    "eslint": "^9.28.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}
