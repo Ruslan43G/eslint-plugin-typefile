@@ -5,7 +5,7 @@
     "type": "git",
     "url": "git+https://github.com/Ruslan43G/eslint-plugin-typefile.git"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Custom eslint rules",
   "main": "dist/index.cjs",
   "module": "dist/index.es.js",

@@ -15,7 +15,7 @@ const plugin: PluginConfig & ESLint.Plugin = {
     name: 'eslint-plugin-typefile',
     meta: {
         name: 'eslint-plugin-typefile',
-        version: '1.0.0',
+        version: '1.1.0',
     },
     rules: { 
         'no-inline-types': noInlineTypes 
